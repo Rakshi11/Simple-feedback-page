@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(210, 195, 224);
+        }
+        .input-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 3S0px;
+        }
+        table, th, td {
+            border: 1px solid rgb(134, 5, 5);
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Application</h1>
+    <div class="input-container">
+        <input type="text" id="feedbackInput" placeholder="Enter your feedback here">
+        <button id="addFeedbackButton">Add Feedback</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>All Feedbacks</th>
+            </tr>
+        </thead>
+        <tbody id="feedbackList">
+            <!-- Feedback items will be added here -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
